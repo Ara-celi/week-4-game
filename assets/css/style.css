@@ -1,0 +1,40 @@
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: Verdana, Geneva, sans-serif;
+}
+html {
+    height: 100%;
+}
+img {
+	display: inline-block;
+	float: left;
+	width: 10%;
+	height: 75px;
+	padding: 20px 10px;
+	border: 2px solid;
+}	
+.characters {
+	border-color: #008000;
+	background-color: #FFFFFF;
+}
+.enemiesRed {
+	border-color: black;
+	background-color: red;
+} 
+.defendersBlack {
+	border-color: black;
+	background-color: black;
+}
+div {
+	clear: left;
+}
+#h1 {
+	font-size: 40px;
+	font-weight: 500;
+	text-align: right;
+	padding-right: 100px;
+}
+.h2 {
+	font-size: 20px;
+}
