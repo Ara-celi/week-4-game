@@ -1,39 +1,41 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-console.log("starwars game loaded");
+	console.log("starwars game loaded");
 
-var kenobi="";
-var skywalker="";
-var sidious="";
-var maul="";
+	var gameCharacters=['obiWonKenobi', 'lukeSkywalker', 'darthSidious', 'darthMaul'];
+	var kenobi=0;
+	var skywalker=0;
+	var sidious=0
+	var maul=0;
+	var playerChosen=false;
+	var enemyChosen=false;
+	
+	//click on one of four characters 
+	$(".character").click(function() {
+			console.log( "hello")
 
-
-$("img").click(function() {
-	console.log( "hello")
-$(this).appendTo($("#yourCharacter"));
-	console.log("it works")
-$(".player").appendTo($("#enemies"))
-	console.log("enemies")
-});
-
-
-
-//click on one of four characters
-
-
-
-
-
-
-
-//character clicked on moves under 'your character'
-//
-
+		if (playerChosen==false) {
+			//move selected player into character row
+			$("#yourCharacter").append($(this));
+			playerChosen=true;
+			console.log("it works")
+			console.log(playerChosen)
+		}
+			//move remaining players into enemies row
+			$("#enemies").append($(".player"))
+				console.log("enemies")
+			//images need to change style black border red padding
+			$(".player").children().css('background-color', "red");
+			$(".player").children().css('border-color', "black");
+		
+		});	
+})
 
 //click on one of three enemies
 
 
-//enemy clidked on goes under 'defender'
+//enemy clicked on goes under 'defender'
+//image needs to style black padding green border
 
 
 
@@ -58,4 +60,3 @@ $(".player").appendTo($("#enemies"))
 //if attack is pressed alert: No enemy here.
 //once enemy is chosen clear alerts
 
-});	

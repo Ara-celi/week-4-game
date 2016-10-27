@@ -5,35 +5,37 @@
 		<title>Star Wars RPG!</title>
 		
 		<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-		
-		<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
-		<script src="assets/javascript/game.js"></script>
 
 	</head>
 	
 	<body style="background-image:url(assets/images/fighterjet.jpg)" >
 		<div id="h1">Star Wars RPG!</div>
 		
-		<div class=player> 
-			<img id= kenobi class="characters" src="assets/images/kenobi.jpeg" alt="Obi-Wan kenobi">
-			<img id=skywalker class="characters" src="assets/images/Skywalker.jpeg" alt="Luke Skywalker">
-			<img id=sidious class="characters" src="assets/images/Sidious.jpeg" alt="Darth Sidious">
-			<img id=maul class="characters" src="assets/images/Maul.jpeg" alt="Darth Maul">
+		<div class="player"> 
+			<img id="kenobi" class="character" src="assets/images/kenobi.jpeg" alt="Obi-Wan kenobi">
+			<img id="skywalker" class="character" src="assets/images/Skywalker.jpeg" alt="Luke Skywalker">
+			<img id="sidious" class="character" src="assets/images/Sidious.jpeg" alt="Darth Sidious">
+			<img id="maul" class="character" src="assets/images/Maul.jpeg" alt="Darth Maul">
 		</div>	
 		
 		<div class="h2">Your Character</div>
-		<div id=yourCharacter></div>	
+		<div id="yourCharacter"></div>	
+
 
 		<div class="h2">Enemies Available To Attack</div>
-		<div id=enemies class="enemiesRed"></div>
+		<div id="enemies" class="enemyCharacter"></div>
 		
-		<div class="h2"class="h2">Fight Section</div>
+
+		<div class="h2">Fight Section</div>
 		
 		<button>Attack</button>
 		
 		<div class="h2">Defender</div>
-		<div></div>
+		<div id="defender"></div>
 		<button>Restart</button>
 
+		<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+		<script src="assets/javascript/game.js"></script>
+
 	</body>
-	</html>
+</html>
